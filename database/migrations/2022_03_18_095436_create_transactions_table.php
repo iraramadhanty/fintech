@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('item_id')->nullable()->constrained();
-            $table->smallInteger('quantity');
+            $table->smallInteger('quantity')->nullable();
+            $table->smallInteger('amount')->nullable();
             $table->string('invoice_id');
             $table->integer('type');
             $table->integer('status');

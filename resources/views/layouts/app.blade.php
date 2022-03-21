@@ -39,8 +39,8 @@
                     <ul class="navbar-nav me-auto">
                         @auth
                             @if (Auth::user()->role_id === 4)
-                                <li class="nav-item">
-                                    <a class="nav-link aria-current="page href="{{ route('home') }}">Home</a>
+                                <li class="nav-item" >
+                                    <a class="nav-link aria-current="page href="{{ route('home') }}" >Home</a>
                                 </li>
                             @endif
                         @endauth

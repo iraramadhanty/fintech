@@ -5,8 +5,8 @@
 
         {{-- my balance --}}
         <div class="card">
-            <div class="card-header">
-                Balance
+            <div class="card-header" style="background-color: #8EBFE3">
+                Saldo
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
@@ -15,36 +15,14 @@
             </div>
         </div>
 
-        {{-- menu --}}
-        <div class="card mt-5">
-            <div class="card-header">
-                Menu
-            </div>
-            <div class="card-body">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Bakso</h5>
-                                <p class="card-text">Bakso daging</p>
-                                <input type="number">
-                                <a href="#" class="btn btn-primary">Add To Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card mt-5">
-                    <div class="card-header">
-                        Cart
+                    <div class="card-header" style="background-color: #8EBFE3">
+                        Keranjang
                     </div>
                     <div class="card-body">
-                        <table class="table">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
@@ -70,11 +48,11 @@
             </div>
             <div class="col-md-6">
                 <div class="card mt-5">
-                    <div class="card-header">
+                    <div class="card-header" style="background-color: #8EBFE3">
                         Check Out
                     </div>
                     <div class="card-body">
-                        <table class="table">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>

@@ -13,6 +13,12 @@ class ItemController extends Controller
         return view("pages.canteen.index", compact("items"));
     }
 
+    public function menu()
+    {
+        $items = Item::all();
+        return view("pages.user.canteen", compact("items"));
+    }
+
     public function store(Request $request)
     {
         $request->validate([

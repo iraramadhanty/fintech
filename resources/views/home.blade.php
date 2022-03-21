@@ -20,32 +20,31 @@ $page = 'Home';
 
                         @if (Auth::user()->role_id === 4)
                             <div class="row">
-                                <div class="card col" style="width: 100px; height: 100px; align-items:center; justify-content:center; margin:5px; background-color: #4287f5">
+                                <div class="card col" style="width: 100px; height: 100px; align-items:center; justify-content:center; margin:5px; background-color: #95B3ED">
                                     <a href="{{ route('topup.index') }}" style="text-decoration: none; color: white" >Top Up</a>
                                 </div>
-                                <div class="card col" style="width: 100px; height: 100px; align-items:center; justify-content:center; margin:5px; background-color: #4287f5">
-                                    <a href="{{ route('item.list') }}" style="text-decoration: none; color: white">Canteen</a>
+                                <div class="card col" style="width: 100px; height: 100px; align-items:center; justify-content:center; margin:5px; background-color: #95B3ED">
+                                    <a href="{{ route('menu') }}" style="text-decoration: none; color: white">Canteen</a>
                                 </div>
 
-                                <div class="card col" style="width: 100px; height: 100px; align-items:center; justify-content:center; margin:5px; background-color: #4287f5">
-                                    <a href="{{ route('transaction.index') }}" style="text-decoration: none; color: white">History
-                                        Transaction</a>
+                                <div class="card col" style="width: 100px; height: 100px; align-items:center; justify-content:center; margin:5px; background-color: #95B3ED">
+                                    <a href="{{ route('transaction.index') }}" style="text-decoration: none; color: white">Transaction</a>
                                 </div>
                             </div>
                         @endif
                         @if (Auth::user()->role_id === 3)
-                            <div class="card" style="width: 100%; height: 50%">
-                                <a href="{{ route('item.list') }}" class="btn btn-primary">Barang</a>
+                            <div class="card" style="width: 100%; height: 50px; background-color: #95B3ED; align-items:center; justify-content:center;">
+                                <a href="{{ route('item.list') }}"  style="text-decoration: none; color: white" >Barang</a>
                             </div>
                         @endif
                         @if (Auth::user()->role_id === 2)
-                            <div class="card" style="width: 100%; height: 50%">
-                                <a href="{{ route('bank.index') }}" class="btn btn-primary">Check</a>
+                            <div class="card" style="width: 100%; height: 50px; background-color: #95B3ED; align-items:center; justify-content:center;">
+                                <a href="{{ route('bank.index') }}"  style="text-decoration: none; color: white" >Transaksi</a>
                             </div>
                         @endif
                         @if (Auth::user()->role_id === 1)
-                            <div class="card" style="width: 100%; height: 50%">
-                                <a href="{{ route('user.list') }}" class="btn btn-primary">User</a>
+                            <div class="card" style="width: 100%; height: 50px; background-color: #95B3ED; align-items:center; justify-content:center;">
+                                <a href="{{ route('user.list') }}"  style="text-decoration: none; color: white">User</a>
                             </div>
                         @endif
                         {{-- @if (Auth::user()->role_id === 2)

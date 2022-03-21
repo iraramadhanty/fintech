@@ -3,7 +3,7 @@
 @section('content')
     <div class="container mt-3">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addModal">
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addModal" style="background-color: #6C7FB2">
             Add
         </button>
         <!-- Modal -->

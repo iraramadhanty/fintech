@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="background-color: #88D9D7; margin-top: 100px; border-radius: 10px">
         <form class="mt-3" method="POST" action={{ route('user.add') }}>
             @csrf
             <div class="mb-3">
@@ -37,7 +37,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary">
-                    <a href="/user/list">Back</a>
+                    <a href="/user/list" style="text-decoration: none; color:white">Back</a>
                 </button>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>

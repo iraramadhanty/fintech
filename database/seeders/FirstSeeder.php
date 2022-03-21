@@ -77,7 +77,8 @@ class FirstSeeder extends Seeder
         Transaction::create([
             "user_id" => $septy->id,
             "item_id" => null,
-            "quantity" => 3000,
+            "quantity" => 3,
+            "amount"   => 5000,
             "invoice_id" => "SAL_001",
             "type" => 1,
             "status" => 3

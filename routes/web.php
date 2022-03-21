@@ -37,7 +37,7 @@ Route::prefix("user")->group(function () {
 
 Route::prefix("item")->group(function () {
     Route::get("/list", [ItemController::class, 'index'])->name("item.list");
-    // Route::get("/create", [CanteenController::class, 'create'])->name("canteen.create");
+    Route::get("/create", [CanteenController::class, 'create'])->name("item.create");
     Route::post("/add", [ItemController::class, 'store'])->name("item.add");
     Route::put("/edit/{item}", [ItemController::class, 'update'])->name("item.edit");
     Route::delete("/delete/{item}", [ItemController::class, 'destroy'])->name("item.delete");
@@ -56,3 +56,6 @@ Route::prefix("transaction")->group(function () {
 Route::prefix("bank")->group(function () {
     Route::get("/", [BankController::class, 'get_transaction'])->name("bank.index");
 });
+
+Route::get("/menu", [ItemController::class, 'menu'])->name("menu");
+
